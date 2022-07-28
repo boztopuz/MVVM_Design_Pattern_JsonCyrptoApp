@@ -11,6 +11,9 @@
 		1E3552FD28745E0B00B6C012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3552FC28745E0B00B6C012 /* ContentView.swift */; };
 		1E3552FF28745E0C00B6C012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3552FE28745E0C00B6C012 /* Assets.xcassets */; };
 		1E35530228745E0C00B6C012 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E35530128745E0C00B6C012 /* Preview Assets.xcassets */; };
+		1E35530D28745FD300B6C012 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35530C28745FD300B6C012 /* Crypto.swift */; };
+		1E35530F2874621100B6C012 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35530E2874621100B6C012 /* WebService.swift */; };
+		1EA96C9228759285009B18F3 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA96C9128759285009B18F3 /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		1E3552FC28745E0B00B6C012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E3552FE28745E0C00B6C012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E35530128745E0C00B6C012 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E35530C28745FD300B6C012 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		1E35530E2874621100B6C012 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		1EA96C9128759285009B18F3 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		1E3552F928745E0B00B6C012 /* SwiftUICryptoCrayz */ = {
 			isa = PBXGroup;
 			children = (
+				1E35530B28745FC100B6C012 /* View */,
+				1E35530A28745FBA00B6C012 /* Service */,
+				1E35530928745FB300B6C012 /* ViewModel */,
+				1E35530828745FAC00B6C012 /* Model */,
 				1E3552FA28745E0B00B6C012 /* SwiftUICryptoCrayzApp.swift */,
-				1E3552FC28745E0B00B6C012 /* ContentView.swift */,
 				1E3552FE28745E0C00B6C012 /* Assets.xcassets */,
 				1E35530028745E0C00B6C012 /* Preview Content */,
 			);
@@ -65,6 +74,38 @@
 				1E35530128745E0C00B6C012 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E35530828745FAC00B6C012 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E35530C28745FD300B6C012 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E35530928745FB300B6C012 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EA96C9128759285009B18F3 /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E35530A28745FBA00B6C012 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1E35530E2874621100B6C012 /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1E35530B28745FC100B6C012 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E3552FC28745E0B00B6C012 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E35530D28745FD300B6C012 /* Crypto.swift in Sources */,
 				1E3552FD28745E0B00B6C012 /* ContentView.swift in Sources */,
+				1E35530F2874621100B6C012 /* WebService.swift in Sources */,
 				1E3552FB28745E0B00B6C012 /* SwiftUICryptoCrayzApp.swift in Sources */,
+				1EA96C9228759285009B18F3 /* CryptoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
